@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace = "com.victor.calculadora"
+    namespace = "com.pedro.calculadora"
     compileSdk = 33
 
     defaultConfig {
-        applicationId = "com.victor.calculadora"
+        applicationId = "com.pedro.calculadora"
         minSdk = 24
         targetSdk = 33
         versionCode = 1

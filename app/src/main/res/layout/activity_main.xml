@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
     android:orientation="vertical">
 
     <LinearLayout
@@ -30,7 +33,6 @@
         android:layout_marginLeft="0dp"
         android:layout_marginRight="0dp"
         android:layout_marginBottom="20dp"
-        android:gravity="center"
         android:orientation="horizontal">
 
         <EditText
@@ -40,35 +42,11 @@
             android:layout_marginLeft="30dp"
             android:layout_marginRight="30dp"
             android:layout_weight="1"
-            android:hint="ingrese un numero"
+            android:hint="Ingrese un numero"
             android:inputType="numberDecimal"
             android:textAlignment="center"
-            android:textColor="#00000000"
-            android:textColorHint="#BDBDBD"
-            android:textSize="20sp" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginLeft="0dp"
-        android:layout_marginRight="0dp"
-        android:layout_marginBottom="50dp"
-        android:orientation="horizontal">
-
-        <EditText
-            android:id="@+id/segundoVal"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="30dp"
-            android:layout_marginRight="30dp"
-            android:layout_weight="1"
-            android:hint="ingrese otro numero"
-            android:inputType="numberDecimal"
-            android:textAlignment="center"
-            android:textColor="#00000000"
-            android:textColorHint="#B0B0B0"
+            android:textColor="#000000"
+            android:textColorHint="#AAA8A8"
             android:textSize="20sp" />
     </LinearLayout>
 
@@ -77,42 +55,50 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginLeft="0dp"
-        android:layout_marginRight="0dp"
-        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="50dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:textAlignment="center">
+
+        <EditText
+            android:id="@+id/segundoval"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            tools:text="Ingrese otro numero" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:orientation="horizontal">
 
         <Button
             android:id="@+id/btn_sumar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:text="+"
-            android:textSize="15sp" />
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:text="Button"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:cornerRadius="10dp"
+            tools:text="+" />
 
         <Button
-            android:id="@+id/btn_division"
+            android:id="@+id/btn_restar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:text="-"
-            android:textSize="15sp" />
-
-        <Button
-            android:id="@+id/btn_multiplicar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_weight="1"
-            android:text="x"
-            android:textSize="15sp" />
-
-        <Button
-            android:id="@+id/btn_division"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:text="/"
-            android:textSize="15sp" />
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:text="Button"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:cornerRadius="10dp"
+            tools:text="-" />
     </LinearLayout>
 </LinearLayout>
